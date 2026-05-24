@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Raíz – Menú</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">☕ Café Raíz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header text-white text-center d-flex align-items-center justify-content-center">
+    <div>
+      <h1 class="fw-bold mb-2">Nuestro Menú</h1>
+      <p class="lead opacity-75">Elige tu favorito</p>
+    </div>
+  </div>
+
+  <!-- MENU SECTION -->
+  <section class="py-5">
+    <div class="container">
+
+      <!-- TABS -->
+      <ul class="nav nav-tabs menu-tabs justify-content-center mb-5" id="menuTabs">
+        <li class="nav-item">
+          <button class="nav-link active" data-category="calientes">Bebidas Calientes</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-category="frias">Bebidas Frías</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-category="reposteria">Repostería</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-category="snacks">Snacks</button>
+        </li>
+      </ul>
+
+      <!-- PRODUCTS GRID -->
+      <div class="row g-4" id="productsGrid">
+        <!-- Bebidas Calientes -->
+        <div class="col-md-4 menu-item" data-category="calientes">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">☕</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Espresso Doble</h6>
+              <p class="text-muted small mb-2">Intenso y concentrado, el clásico de siempre.</p>
+              <span class="price">$4.500</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item" data-category="calientes">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">☕</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Cappuccino</h6>
+              <p class="text-muted small mb-2">Espresso con leche vaporizada y espuma sedosa.</p>
+              <span class="price">$6.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item" data-category="calientes">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🥛</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Latte de Vainilla</h6>
+              <p class="text-muted small mb-2">Suave y cremoso con un toque dulce de vainilla.</p>
+              <span class="price">$7.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item" data-category="calientes">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🍫</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Chocolate Caliente</h6>
+              <p class="text-muted small mb-2">Elaborado con cacao colombiano 100% natural.</p>
+              <span class="price">$6.500</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item" data-category="calientes">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🍵</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Té de Hierbas</h6>
+              <p class="text-muted small mb-2">Selección de hierbas aromáticas de la región.</p>
+              <span class="price">$5.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item" data-category="calientes">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">☕</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Café Americano</h6>
+              <p class="text-muted small mb-2">Espresso diluido en agua caliente, suave y largo.</p>
+              <span class="price">$5.000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bebidas Frías -->
+        <div class="col-md-4 menu-item d-none" data-category="frias">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🧊</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Cold Brew</h6>
+              <p class="text-muted small mb-2">Café en frío macerado por 12 horas. Suave y refrescante.</p>
+              <span class="price">$7.500</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item d-none" data-category="frias">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🥤</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Frappé de Café</h6>
+              <p class="text-muted small mb-2">Café helado batido con leche y crema chantilly.</p>
+              <span class="price">$8.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item d-none" data-category="frias">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🍹</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Limonada de Coco</h6>
+              <p class="text-muted small mb-2">Refrescante combinación tropical sin café.</p>
+              <span class="price">$6.500</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item d-none" data-category="frias">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🧃</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Jugo Natural</h6>
+              <p class="text-muted small mb-2">Frutas de temporada frescas y naturales.</p>
+              <span class="price">$5.500</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repostería -->
+        <div class="col-md-4 menu-item d-none" data-category="reposteria">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🥐</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Croissant de Mantequilla</h6>
+              <p class="text-muted small mb-2">Hojaldrado, dorado y recién horneado cada mañana.</p>
+              <span class="price">$5.500</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item d-none" data-category="reposteria">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🍰</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Cheesecake de Maracuyá</h6>
+              <p class="text-muted small mb-2">Cremoso con toque ácido tropical colombiano.</p>
+              <span class="price">$8.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item d-none" data-category="reposteria">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🧁</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Muffin de Arándanos</h6>
+              <p class="text-muted small mb-2">Esponjoso con frutos rojos frescos por dentro.</p>
+              <span class="price">$5.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item d-none" data-category="reposteria">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🍪</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Galleta de Avena</h6>
+              <p class="text-muted small mb-2">Con chips de chocolate y un toque de canela.</p>
+              <span class="price">$3.500</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Snacks -->
+        <div class="col-md-4 menu-item d-none" data-category="snacks">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🥪</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Sándwich de Jamón y Queso</h6>
+              <p class="text-muted small mb-2">Pan artesanal, jamón serrano y queso manchego.</p>
+              <span class="price">$9.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item d-none" data-category="snacks">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🥗</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Bowl de Fruta</h6>
+              <p class="text-muted small mb-2">Frutas frescas de temporada con miel y granola.</p>
+              <span class="price">$7.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 menu-item d-none" data-category="snacks">
+          <div class="product-card">
+            <div class="product-img d-flex align-items-center justify-content-center"><span style="font-size:3rem">🧀</span></div>
+            <div class="p-3">
+              <h6 class="fw-bold mb-1">Tostadas con Queso</h6>
+              <p class="text-muted small mb-2">Pan tostado artesanal con queso crema y hierbas.</p>
+              <span class="price">$6.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer py-4 text-center text-white">
+    <div class="container">
+      <p class="mb-1 fw-bold">☕ Café Raíz</p>
+      <p class="mb-1 small">Colombia &nbsp;|&nbsp; +57 605 123 4567 &nbsp;|&nbsp; contacto@caferaiz.co</p>
+      <p class="mb-0 small opacity-75">© 2026 Café Raíz. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
